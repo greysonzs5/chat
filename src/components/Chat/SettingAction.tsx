@@ -156,27 +156,6 @@ export default function SettingAction() {
                 ]}
               />
             </SettingItem>
-            <SettingItem icon="i-carbon:data-enrichment" label="思维发散程度">
-              <div class="flex items-center justify-between w-150px">
-                <input
-                  type="range"
-                  min={0}
-                  max={100}
-                  value={String(store.sessionSettings.APITemperature * 50)}
-                  class="bg-slate max-w-100px w-full h-2 bg-op-15 rounded-lg appearance-none cursor-pointer accent-slate"
-                  onInput={e => {
-                    setStore(
-                      "sessionSettings",
-                      "APITemperature",
-                      Number((e.target as HTMLInputElement).value) / 50
-                    )
-                  }}
-                />
-                <span class="bg-slate bg-op-15 rounded-sm px-1 text-10px">
-                  {store.sessionSettings.APITemperature.toFixed(2)}
-                </span>
-              </div>
-            </SettingItem>
             <SettingItem icon="i-carbon:save-image" label="记录对话内容">
               <SwitchButton
                 checked={store.sessionSettings.saveSession}
