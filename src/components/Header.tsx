@@ -73,15 +73,6 @@ export default function Header() {
           </Show>
         </div>
         <ThemeToggle />
-        <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?5aff25b20308b19618d1ea0a4797216b";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
       </header>
     </>
   )
