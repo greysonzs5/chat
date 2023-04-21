@@ -88,7 +88,7 @@ export async function POST({ request }: APIEvent) {
 
     const apiKey = randomKey(splitKeys(key))
 
-    if (!apiKey) throw new Error("没有填写 OpenAI API key，或者 key 填写错误。")
+    if (!apiKey) throw new Error("今天免费时间已经过咯 请明天12-22点再来哟 或者输入自己的API即可立即使用 没有API[联系我购买API](https://www.lianmenghao.cn/zb_users/upload/2023/03/20230327141734167989785492356.jpg)")
 
     const encoder = new TextEncoder()
     const decoder = new TextDecoder()
