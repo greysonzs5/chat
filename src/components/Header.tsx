@@ -3,17 +3,6 @@ import ThemeToggle from "./ThemeToggle"
 import { RootStore, loadSession } from "~/store"
 import { Show, createMemo } from "solid-js"
 import { useNavigate } from "solid-start"
-const baiduTj = `
-  <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?5aff25b20308b19618d1ea0a4797216b";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-`
 function splitEmoji(text: string) {
   const [icon, title] = text
     .split(
@@ -84,7 +73,15 @@ export default function Header() {
           </Show>
         </div>
         <ThemeToggle />
-        <script dangerouslySetInnerHTML={{ __html: baiduTj }}></script>
+        <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5aff25b20308b19618d1ea0a4797216b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
       </header>
     </>
   )
