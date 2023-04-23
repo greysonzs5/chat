@@ -183,7 +183,7 @@ export default function ({
               onClick={stopStreamFetch}
             >
               <span class="dark:text-slate text-slate-7">
-                AI 正在思考 / {store.currentMessageToken} / $
+                AI 正在思考 完全免费 为爱发电 / {store.currentMessageToken} / $
                 {store.currentMessageToken$.toFixed(4)}
               </span>
             </div>
@@ -197,7 +197,7 @@ export default function ({
             <textarea
               ref={el => setStore("inputRef", el)}
               id="input"
-              placeholder="与 ta 对话吧"
+              placeholder="输入空格可打开预设指令 输入两个空格可选择历史创建的对话"
               autocomplete="off"
               value={store.inputContent}
               autofocus
