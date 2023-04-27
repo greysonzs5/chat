@@ -1,7 +1,7 @@
 {
   "name": "chatgpt-vercel",
   "version": "1.0.0",
-  "description": "AI",
+  "description": "Elegant and Powerful. Powered by OpenAI and Vercel",
   "type": "module",
   "license": "MIT",
   "scripts": {
